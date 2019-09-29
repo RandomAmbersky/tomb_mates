@@ -1,0 +1,13 @@
+{
+  "name": "tomb_mates",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RandomAmbersky/tomb_mates.git",
+  "author": "sir.Random <no@mial.com>",
+  "scripts": {
+    "build:proto": "protoc --go_out=. *.proto",
+    "run:server": "yarn build:proto && go run cmd/server/*go",
+    "run:client": "go run cmd/client/*go"
+  },
+  "license": "MIT"
+}
